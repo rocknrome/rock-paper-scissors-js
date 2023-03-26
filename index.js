@@ -50,6 +50,9 @@ const determineWinner = (userChoice, computerChoice) => {
       return 'USER WON';
     }
   }
+  if (userChoice === 'bomb') {//cheat code "bomb" that always lets the user to win
+      return 'USER WON';
+    }
 };
 //Create a function named playGame. Inside the playGame() function, create a variable named userChoice set equal to the result of calling getUserChoice(), passing in either 'rock', 'paper', or 'scissors' as an argument. Create another variable named computerChoice, and set it equal to the result of calling getComputerChoice(). Under both of these variables, use console.log to print them to the console.
 const playGame = () => {
